@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Species Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center my-4">Marine Species Data</h1>
+
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Add New Species</h5>
+                <form id="species-form">
+                    <div class="mb-3">
+                        <label for="species-name" class="form-label">Species Name</label>
+                        <input type="text" class="form-control" id="species-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="species-habitat" class="form-label">Habitat</label>
+                        <input type="text" class="form-control" id="species-habitat" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="species-status" class="form-label">Conservation Status</label>
+                        <select class="form-select" id="species-status" required>
+                            <option value="Least Concern">Least Concern</option>
+                            <option value="Vulnerable">Vulnerable</option>
+                            <option value="Endangered">Endangered</option>
+                            <option value="Critically Endangered">Critically Endangered</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Species</button>
+                </form>
+            </div>
+        </div>
+
+        <h5>Species List</h5>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Species Name</th>
+                    <th>Habitat</th>
+                    <th>Conservation Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="species-list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

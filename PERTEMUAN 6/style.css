@@ -1,0 +1,19 @@
+body {
+    background-color: #8bc2d6;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+table {
+    margin-top: 20px;
+}
+
+button {
+    margin-right: 10px;
+}
